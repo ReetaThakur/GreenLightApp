@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDCF0B"
+    tools:context=".ui.MainActivity">
+
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:id="@+id/blackView"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+       android:background="@color/black"/>
+
+   <ImageView
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:id="@+id/allowImage"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="28dp"
+       android:layout_marginStart="20dp"
+      android:src="@drawable/ic_arrow_back"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Metrics"
+      android:textStyle="bold"
+      android:textSize="30sp"
+      android:textColor="#FDCF0B"
+      app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginTop="20dp"
+      app:layout_constraintStart_toEndOf="@+id/allowImage"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Performance by Zone"
+       android:layout_margin="12dp"
+       android:backgroundTint="@color/black"
+       android:padding="10dp"
+       android:textAllCaps="false"
+       android:id="@+id/btnCountry"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/blackView"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
